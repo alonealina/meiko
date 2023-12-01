@@ -27,10 +27,15 @@ Route::get('recruit3_3', 'App\Http\Controllers\NokotsudoController@recruit3_3')-
 Route::get('news', 'App\Http\Controllers\NokotsudoController@news')->name('news');
 Route::get('news_detail', 'App\Http\Controllers\NokotsudoController@news_detail')->name('news_detail');
 
-
-
-
 Route::get('contact', 'App\Http\Controllers\NokotsudoController@contact')->name('contact');
+Route::get('contact1', 'App\Http\Controllers\NokotsudoController@contact1')->name('contact1');
+Route::get('contact2', 'App\Http\Controllers\NokotsudoController@contact2')->name('contact2');
+Route::get('contact3', 'App\Http\Controllers\NokotsudoController@contact3')->name('contact3');
+Route::get('contact4', 'App\Http\Controllers\NokotsudoController@contact4')->name('contact4');
+
+Route::get('policy', 'App\Http\Controllers\NokotsudoController@policy')->name('policy');
+
+
 Route::post('mail_send', 'App\Http\Controllers\NokotsudoController@mail_send')->name('mail_send');
 Route::get('mail_comp', 'App\Http\Controllers\NokotsudoController@mail_comp')->name('mail_comp');
 

@@ -457,6 +457,15 @@ footer {
     color: #3E3E3E;
 }
 
+.news_page_flex {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 2.5vw;
+    font: normal normal bold 0.8vw/1.3vw Arial;
+    color: #3E3E3E;
+}
+
 .news_item {
     width: 15vw;
 }
@@ -473,9 +482,64 @@ footer {
     margin-bottom: 1vw;
 }
 
+.news_main_div {
+    padding-left: 2.5vw;
+    color: #3E3E3E;
+}
+
+.news_page_content {
+    font: normal normal normal 0.8vw/1.4vw Kozuka Gothic Pr6N;
+    margin-top: 1vw;
+    color: #535353;
+}
+
+.news_page_img {
+    width: 15vw;
+}
+
 .news_more_btn {
     width: 12vw;
     margin:0 auto 3vw;
+    display: block;
+}
+
+.news_detail_date {
+    font: normal normal bold 0.8vw/1.5vw Arial;
+    color: #FFFFFF;
+    background: #FF6F00 0% 0% no-repeat padding-box;
+    width: 10vw;
+    text-align: center;
+    padding:1vw 0;
+}
+
+.news_detail_title {
+    font: normal normal bold 1.5vw/2.5vw Kozuka Gothic Pr6N;
+    color: #535353;
+    margin:0.5vw 0 2vw;
+}
+
+.news_detail_img {
+    width: 30vw;
+    display: block;
+}
+.news_detail_text {
+    width: 27vw;
+    font: normal normal normal 0.8vw/1.5vw Kozuka Gothic Pr6N;
+    color: #535353;
+}
+
+.news_detail_flex {
+    display: flex;
+    width: 100%;
+    padding: 5vw 20vw;
+    justify-content: space-between;
+    margin-bottom: 2.5vw;
+    font: normal normal bold 0.8vw/1.3vw Arial;
+    color: #3E3E3E;
+}
+
+.back_btn {
+    width: 5vw;
     display: block;
 }
 
@@ -969,7 +1033,11 @@ footer {
 
 .recruit3_1_hover_div,
 .recruit3_2_hover_div,
-.recruit3_3_hover_div {
+.recruit3_3_hover_div,
+.contact1_hover_div,
+.contact2_hover_div,
+.contact3_hover_div,
+.contact4_hover_div {
     display: flex;
     justify-content: space-between;
     padding:0.8vw 1.5vw;
@@ -991,14 +1059,22 @@ footer {
 
 .recruit3_1_hover_div:hover div,
 .recruit3_2_hover_div:hover div,
-.recruit3_3_hover_div:hover div {
+.recruit3_3_hover_div:hover div,
+.contact1_hover_div:hover div,
+.contact2_hover_div:hover div,
+.contact3_hover_div:hover div,
+.contact4_hover_div:hover div {
     color: #FF6F00;
     text-decoration: underline #FF6F00;
 }
 
 .recruit3_1_hover_div:hover .orange_yazi,
 .recruit3_2_hover_div:hover .orange_yazi,
-.recruit3_3_hover_div:hover .orange_yazi {
+.recruit3_3_hover_div:hover .orange_yazi,
+.contact1_hover_div:hover .orange_yazi,
+.contact2_hover_div:hover .orange_yazi,
+.contact3_hover_div:hover .orange_yazi,
+.contact4_hover_div:hover .orange_yazi {
     left: 1.1vw;
 }
 
@@ -1020,8 +1096,74 @@ footer {
     width: 9vw;
 }
 
+.require_mark {
+    font: normal normal normal 0.5vw/0.5vw Hiragino Kaku Gothic Pro;
+    color: #ff6a4b;
+}
+.contact_name {
+    font: normal normal normal 1vw/2vw Kozuka Gothic Pr6N;
+    color: #000000;
+}
+.contact_text, .contact_textarea {
+    margin-top: 0.5vw;
+    margin-bottom: 1vw;
+    background: #FFFCF9 0% 0% no-repeat padding-box;
+    border: 1px solid #FFD3B1;
+    border-radius: 5px;
+    padding:0.5vw 1vw;
+    font: normal normal normal 0.8vw/1.6vw Kozuka Gothic Pr6N;
+    width: 100%;
+}
+.contact_textarea {
+    height: 8vw;
+}
+.contact_text::placeholder, .contact_textarea::placeholder {
+    color: #FFD3B1;
+}
+.send_btn {
+    background: #FF6F00 0% 0% no-repeat padding-box;
+    display: block;
+    margin: auto;
+    width: 15vw;
+    text-align: center;
+    font: normal normal normal 1vw/2vw Kozuka Gothic Pr6N;
+    color: #FFFFFF;
+    padding: 0.6vw 0;
+    margin-top: 5vw;
+}
 
+.contact_detail {
+    background: #F0F0F0 0% 0% no-repeat padding-box;
+    width: 100%;
+    text-align: center;
+    font: normal normal normal 1vw/1.5vw Kozuka Gothic Pr6N;
+    color: #000000;
+    padding:2vw 0;
+    margin-bottom: 5vw;
+}
+.contact_detail span {
+    font: normal normal normal 1.5vw/1.5vw Kozuka Gothic Pr6N;
+    color: #FF6F00;
+}
 
+.contact_flex {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font: normal normal normal 1vw/2.2vw Kozuka Gothic Pr6N;
+    color: #000000;
+}
+.contact_flex_item {
+    width: 50%;
+    margin: 1vw 0;
+}
+.radio_btn, .checkbox {
+    margin-right: 0.5vw;
+    transform: scale(1.2);
+}
+.contact_column {
+    font: normal normal normal 0.8vw/1vw Kozuka Gothic Pr6N;
+}
 
 
 

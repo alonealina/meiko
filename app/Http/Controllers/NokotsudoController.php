@@ -107,11 +107,38 @@ class NokotsudoController extends Controller
     }
 
 
-
     public function contact()
     {
         return view('contact');
     }
+
+    public function contact1()
+    {
+        return view('contact1');
+    }
+
+    public function contact2()
+    {
+        return view('contact2');
+    }
+
+    public function contact3()
+    {
+        return view('contact3');
+    }
+
+    public function contact4()
+    {
+        return view('contact4');
+    }
+
+    public function policy()
+    {
+        return view('policy');
+    }
+
+
+
 
     public function mail_send(Request $request)
     {

@@ -65,7 +65,7 @@
                     <a href="{{ route('services') }}" class="header_a">事業情報</a>
                     <a href="{{ route('company') }}" class="header_a">企業情報</a>
                     <a href="{{ route('recruit') }}" class="header_a">採用情報</a>
-                    <a href="#!" class="header_a">お知らせ</a>
+                    <a href="{{ route('news') }}" class="header_a">お知らせ</a>
                     <a href="#!" class="header_a">お問合せ</a>
                 </div>
             </header>
