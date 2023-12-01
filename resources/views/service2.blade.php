@@ -2,12 +2,12 @@
 
 
 @section('content')
-<img src="{{ asset('img/service1_bar.png') }}" class="service_bar">
+<img src="{{ asset('img/service2_bar.png') }}" class="service_bar">
 
 
 <div class="service_list_div">
     <div class="service_item_div">
-        <img src="{{ asset('img/service1.png') }}" class="service_main_img">
+        <img src="{{ asset('img/service2.png') }}" class="service_main_img">
         <div class="service1_text_box">
             <div class="service_title_orange_en">CONSULTING</div>
             <div class="service_title_orange_ja">寺院運営コンサルティングについて</div>

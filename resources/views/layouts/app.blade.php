@@ -92,10 +92,10 @@
 
                 <div class="footer_item2">
                     <a href="{{ route('services') }}" class="footer_main_a">事業情報</a>
-                    <a href="#!" class="footer_sub_a">寺院運営コンサルティング</a>
-                    <a href="#!" class="footer_sub_a">納骨堂コンサルティング</a>
-                    <a href="#!" class="footer_sub_a">集客・広報コンサルティング</a>
-                    <a href="#!" class="footer_sub_a">新規事業コンサルティング</a>
+                    <a href="{{ route('service1') }}" class="footer_sub_a">寺院運営コンサルティング</a>
+                    <a href="{{ route('service2') }}" class="footer_sub_a">納骨堂コンサルティング</a>
+                    <a href="{{ route('service3') }}" class="footer_sub_a">集客・広報コンサルティング</a>
+                    <a href="{{ route('service4') }}" class="footer_sub_a">新規事業コンサルティング</a>
                 </div>
 
                 <div class="footer_item2">

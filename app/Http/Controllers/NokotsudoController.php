@@ -44,6 +44,21 @@ class NokotsudoController extends Controller
         return view('company');
     }
 
+    public function company1()
+    {
+        return view('company1');
+    }
+
+    public function company2()
+    {
+        return view('company2');
+    }
+
+    public function company3()
+    {
+        return view('company3');
+    }
+
 
     public function recruit()
     {

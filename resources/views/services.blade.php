@@ -4,25 +4,25 @@
 @section('content')
 <img src="{{ asset('img/service_list_bar.png') }}" class="service_bar">
 
-<a href="#!" class="service_list1_hover_div">
+<a href="{{ route('service1') }}" class="service_list1_hover_div">
     <img src="{{ asset('img/service_icon1.png') }}" class="service_icon1">
 </a>
 <div class="service_list1_orange_1 service_list_orange1"></div>
 <div class="service_list1_orange_2 service_list_orange1"></div>
 
-<a href="#!" class="service_list2_hover_div">
+<a href="{{ route('service2') }}" class="service_list2_hover_div">
     <img src="{{ asset('img/service_icon2.png') }}" class="service_icon2">
 </a>
 <div class="service_list2_orange_1 service_list_orange2"></div>
 <div class="service_list2_orange_2 service_list_orange2"></div>
 
-<a href="#!" class="service_list3_hover_div">
+<a href="{{ route('service3') }}" class="service_list3_hover_div">
     <img src="{{ asset('img/service_icon3.png') }}" class="service_icon3">
 </a>
 <div class="service_list3_orange_1 service_list_orange3"></div>
 <div class="service_list3_orange_2 service_list_orange3"></div>
 
-<a href="#!" class="service_list4_hover_div">
+<a href="{{ route('service4') }}" class="service_list4_hover_div">
     <img src="{{ asset('img/service_icon4.png') }}" class="service_icon4">
 </a>
 <div class="service_list4_orange_1 service_list_orange4"></div>

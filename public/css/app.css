@@ -707,7 +707,7 @@ footer {
     padding:8vw 15vw;
 }
 
-.service1_1_img {
+.service_main_img {
     width: 40vw;
     display: block;
 }
@@ -715,14 +715,16 @@ footer {
 .service_title_orange_en {
     font: normal normal bold 3vw/3.5vw Arial;
     color: #FF6F00;
+    text-shadow: 1px 1px 1px #fff;
 }
 .service_title_orange_ja {
     font: normal normal normal 1vw/2vw Kozuka Gothic Pr6N;
     color: #FF6F00;
+    text-shadow: 1px 1px 1px #fff;
 }
 .service_text {
     font: normal normal normal 0.8vw/1.5vw Kozuka Gothic Pr6N;
-    color: #535353;
+    color: #ddd;
     margin-top: 1vw;
     mix-blend-mode: difference;
 }
@@ -790,8 +792,138 @@ footer {
     display: block;
 }
 
+.company_flex {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 
+.company_column {
+    width: 50%;
+    display: flex;
+    margin:1vw 0;
+}
 
+.company_column_name {
+    width: 7vw;
+    font: normal normal normal 1vw/1.5vw Kozuka Gothic Pr6N;
+    color: #FF6F00;
+}
+
+.company_column_content {
+    font: normal normal normal 1vw/1.5vw Kozuka Gothic Pr6N;
+    color: #535353;
+}
+
+.company2_title {
+    text-align: center;
+    font: normal normal bold 2.5vw/5vw Kozuka Gothic Pr6N;
+    color: #FF6F00;
+    width: 65vw;
+    margin-left: -2.5vw;
+    border-bottom: 4px solid;
+    margin-bottom: 4vw;
+}
+
+.company2_flex_text {
+    width: 40vw;
+    font: normal normal normal 0.8vw/1.6vw Kozuka Gothic Pr6N;
+    letter-spacing: 0px;
+    color: #535353;
+}
+.company2_flex_content {
+    width: 20vw;
+    background: #F0F0F0 0% 0% no-repeat padding-box;
+}
+.company2_img {
+    width: 100%;
+    display: block;
+}
+.company2_flex_text2 {
+    padding:1vw 1.5vw 4vw 1.5vw;
+    font: normal normal normal 0.8vw/1.6vw Kozuka Gothic Pr6N;
+    color: #535353;
+}
+.company2_ceo {
+    font: normal normal normal 0.8vw/1.6vw Kozuka Gothic Pr6N;
+    color: #535353;
+}
+.company_ceo_name {
+    font: normal normal bold 1.5vw/3vw Kozuka Gothic Pr6N;
+    color: #FF6F00;
+    margin-bottom: 1.5vw;
+}
+.company_ceo_name span {
+    font: normal normal normal 0.8vw/1.6vw Kozuka Gothic Pr6N;
+    color: #888888;
+}
+
+.company3_title1 {
+    text-align: center;
+    font: normal normal bold 2.5vw/5vw Kozuka Gothic Pr6N;
+    color: #FF6F00;
+    border-bottom: 0.2vw solid;
+    display: block;
+    margin: 0 auto;
+}
+
+.company3_1 {
+    display: block;
+    margin: 4vw auto 5vw;
+    width: 100%;
+}
+
+.company3_title2 {
+    text-align: center;
+    font: normal normal bold 1.5vw/3vw Kozuka Gothic Pr6N;
+    color: #FF6F00;
+    margin:5vw 0 3vw;
+}
+
+.company_flex {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 2vw 0;
+}
+.company_flex_box {
+    width: 48%;
+    border: 0.2vw solid #FF6F00;
+    display: flex;
+    justify-content: space-between;
+
+}
+.company_flex_padding {
+    padding: 0 3vw;
+}
+
+.company3_2 {
+    width: 40%;
+    display: block;
+}
+.company_flex_text {
+    padding:2.3vw 1.5vw;
+    font: normal normal normal 0.8vw/1.6vw Kozuka Gothic Pr6N;
+    color: #535353;
+    width: 60%;
+}
+
+.company3_3_box {
+    width: 12vw;
+    font: normal normal normal 0.8vw/1.6vw Kozuka Gothic Pr6N;
+    color: #535353;
+}
+.company3_3 {
+    width: 100%;
+    display: block;
+}
+.company3_3_title {
+    text-align: center;
+    font: normal normal normal 1vw/2vw Kozuka Gothic Pr6N;
+    color: #FF6F00;
+    margin: 1vw 0;
+}
 
 
 @media screen and (max-width: 500px) {
