@@ -66,7 +66,7 @@
                     <a href="{{ route('company') }}" class="header_a">企業情報</a>
                     <a href="{{ route('recruit') }}" class="header_a">採用情報</a>
                     <a href="{{ route('news') }}" class="header_a">お知らせ</a>
-                    <a href="#!" class="header_a">お問合せ</a>
+                    <a href="{{ route('contact') }}" class="header_a">お問合せ</a>
                 </div>
             </header>
             <div class="header_margin"></div>
@@ -114,7 +114,7 @@
 
             </footer>
             <div class="copyright">
-                <a href="#!" class="copyright_a">プライバシーポリシー</a>
+                <a href="{{ route('policy') }}" class="copyright_a">プライバシーポリシー</a>
                 <div>© 2023 meiko inc.</div>
 
             </div>

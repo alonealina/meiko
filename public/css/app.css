@@ -1165,8 +1165,16 @@ footer {
     font: normal normal normal 0.8vw/1vw Kozuka Gothic Pr6N;
 }
 
-
-
+.policy_text {
+    font: normal normal normal 1vw/2vw Kozuka Gothic Pr6N;
+    color: #000000;
+}
+.policy_title {
+    font: normal normal bold 1.5vw/3vw Kozuka Gothic Pr6N;
+    color: #000000;
+    margin-top: 2.5vw;
+    margin-bottom: 1vw;
+}
 
 @media screen and (max-width: 500px) {
     header {
