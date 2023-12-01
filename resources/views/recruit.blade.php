@@ -4,19 +4,19 @@
 @section('content')
 <img src="{{ asset('img/recruit_list_bar.png') }}" class="service_bar">
 
-<a href="#!" class="company_list1_hover_div">
+<a href="{{ route('recruit1') }}" class="company_list1_hover_div">
     <img src="{{ asset('img/recruit_icon1.png') }}" class="company_icon1">
 </a>
 <div class="company_list1_orange_1 company_list_orange1"></div>
 <div class="company_list1_orange_2 company_list_orange1"></div>
 
-<a href="#!" class="company_list2_hover_div">
+<a href="{{ route('recruit2') }}" class="company_list2_hover_div">
     <img src="{{ asset('img/recruit_icon2.png') }}" class="company_icon2">
 </a>
 <div class="company_list2_orange_1 company_list_orange2"></div>
 <div class="company_list2_orange_2 company_list_orange2"></div>
 
-<a href="#!" class="company_list3_hover_div">
+<a href="{{ route('recruit3') }}" class="company_list3_hover_div">
     <img src="{{ asset('img/recruit_icon3.png') }}" class="company_icon3">
 </a>
 <div class="company_list3_orange_1 company_list_orange3"></div>

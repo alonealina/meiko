@@ -100,16 +100,16 @@
 
                 <div class="footer_item2">
                     <a href="{{ route('company') }}" class="footer_main_a">採用情報</a>
-                    <a href="#!" class="footer_sub_a">会社概要</a>
-                    <a href="#!" class="footer_sub_a">代表挨拶</a>
-                    <a href="#!" class="footer_sub_a">企業理念</a>
+                    <a href="{{ route('company1') }}" class="footer_sub_a">会社概要</a>
+                    <a href="{{ route('company2') }}" class="footer_sub_a">代表挨拶</a>
+                    <a href="{{ route('company3') }}" class="footer_sub_a">企業理念</a>
                 </div>
 
                 <div class="footer_item2">
                     <a href="{{ route('recruit') }}" class="footer_main_a">事業情報</a>
-                    <a href="#!" class="footer_sub_a">会社について</a>
-                    <a href="#!" class="footer_sub_a">人について</a>
-                    <a href="#!" class="footer_sub_a">仕事について</a>
+                    <a href="{{ route('recruit1') }}" class="footer_sub_a">会社について</a>
+                    <a href="{{ route('recruit2') }}" class="footer_sub_a">人について</a>
+                    <a href="{{ route('recruit3') }}" class="footer_sub_a">仕事について</a>
                 </div>
 
             </footer>

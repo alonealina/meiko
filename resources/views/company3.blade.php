@@ -7,13 +7,13 @@
 
 <div class="service_list_div">
     <div class="service_item_div">
-        <div class="company3_title1" style="width: 18vw;">明光のMISSION</div>
+        <div class="underline_title" style="width: 18vw;">明光のMISSION</div>
         <img src="{{ asset('img/company3_1.png') }}" class="company3_1">
 
-        <div class="company3_title1" style="width: 16vw;">明光のVISION</div>
+        <div class="underline_title" style="width: 16vw;">明光のVISION</div>
         <img src="{{ asset('img/company3_1.png') }}" class="company3_1">
 
-        <div class="company3_title1" style="width: 16vw;">明光のVALUE</div>
+        <div class="underline_title" style="width: 16vw;">明光のVALUE</div>
 
         <div class="company3_title2">基本行動指針</div>
 

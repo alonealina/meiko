@@ -65,6 +65,46 @@ class NokotsudoController extends Controller
         return view('recruit');
     }
 
+    public function recruit1()
+    {
+        return view('recruit1');
+    }
+
+    public function recruit2()
+    {
+        return view('recruit2');
+    }
+
+    public function recruit3()
+    {
+        return view('recruit3');
+    }
+
+    public function recruit3_1()
+    {
+        return view('recruit3_1');
+    }
+
+    public function recruit3_2()
+    {
+        return view('recruit3_2');
+    }
+
+    public function recruit3_3()
+    {
+        return view('recruit3_3');
+    }
+
+
+    public function news()
+    {
+        return view('news');
+    }
+
+    public function news_detail()
+    {
+        return view('news_detail');
+    }
 
 
 

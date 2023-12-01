@@ -20,6 +20,14 @@ Route::get('recruit', 'App\Http\Controllers\NokotsudoController@recruit')->name(
 Route::get('recruit1', 'App\Http\Controllers\NokotsudoController@recruit1')->name('recruit1');
 Route::get('recruit2', 'App\Http\Controllers\NokotsudoController@recruit2')->name('recruit2');
 Route::get('recruit3', 'App\Http\Controllers\NokotsudoController@recruit3')->name('recruit3');
+Route::get('recruit3_1', 'App\Http\Controllers\NokotsudoController@recruit3_1')->name('recruit3_1');
+Route::get('recruit3_2', 'App\Http\Controllers\NokotsudoController@recruit3_2')->name('recruit3_2');
+Route::get('recruit3_3', 'App\Http\Controllers\NokotsudoController@recruit3_3')->name('recruit3_3');
+
+Route::get('news', 'App\Http\Controllers\NokotsudoController@news')->name('news');
+Route::get('news_detail', 'App\Http\Controllers\NokotsudoController@news_detail')->name('news_detail');
+
+
 
 
 Route::get('contact', 'App\Http\Controllers\NokotsudoController@contact')->name('contact');
