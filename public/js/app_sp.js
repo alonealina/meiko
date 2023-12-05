@@ -1,45 +1,48 @@
-function clickMenuBrandButton() {
-    if ($('#menu_brand_sp').css('display') == 'flex') {
+function clickMenuServiceButton() {
+    if ($('#menu_service_sp').css('display') == 'block') {
         // 表示されている場合の処理
-        $('#menu_brand_sp').css( 'display', 'none' );
-        $('#up_brand').css( 'display', 'none' );
-        $('#down_brand').css( 'display', 'block' );
-        
+        $('.service_vertical').css( 'opacity', '1' );
+        setTimeout( ()=>{    $('#menu_service_sp').css( 'height', '0' );} ,10);
+        setTimeout( ()=>{    $('#menu_service_sp').css( 'opacity', '0' );} ,10);
+        setTimeout( ()=>{    $('#menu_service_sp').css( 'display', 'none' );} ,500);
     } else {
         // 非表示の場合の処理
-        $('#menu_brand_sp').css( 'display', 'flex' );
-        $('#up_brand').css( 'display', 'block' );
-        $('#down_brand').css( 'display', 'none' );
+        $('#menu_service_sp').css( 'display', 'block' );
+        $('.service_vertical').css( 'opacity', '0' );
+        setTimeout( ()=>{    $('#menu_service_sp').css( 'opacity', '1' );} ,10);
+        setTimeout( ()=>{    $('#menu_service_sp').css( 'height', '200px' );} ,10);
     }
 }
 
 function clickMenuCompanyButton() {
     if ($('#menu_company_sp').css('display') == 'block') {
         // 表示されている場合の処理
-        $('#menu_company_sp').css( 'display', 'none' );
-        $('#up_company').css( 'display', 'none' );
-        $('#down_company').css( 'display', 'block' );
-        
+        $('.company_vertical').css( 'opacity', '1' );
+        setTimeout( ()=>{    $('#menu_company_sp').css( 'height', '0' );} ,10);
+        setTimeout( ()=>{    $('#menu_company_sp').css( 'opacity', '0' );} ,10);
+        setTimeout( ()=>{    $('#menu_company_sp').css( 'display', 'none' );} ,500);
     } else {
         // 非表示の場合の処理
         $('#menu_company_sp').css( 'display', 'block' );
-        $('#up_company').css( 'display', 'block' );
-        $('#down_company').css( 'display', 'none' );
+        $('.company_vertical').css( 'opacity', '0' );
+        setTimeout( ()=>{    $('#menu_company_sp').css( 'opacity', '1' );} ,10);
+        setTimeout( ()=>{    $('#menu_company_sp').css( 'height', '150px' );} ,10);
     }
 }
 
-function clickMenuLinkButton() {
-    if ($('#menu_link_sp').css('display') == 'block') {
+function clickMenuRecruitButton() {
+    if ($('#menu_recruit_sp').css('display') == 'block') {
         // 表示されている場合の処理
-        $('#menu_link_sp').css( 'display', 'none' );
-        $('#up_link').css( 'display', 'none' );
-        $('#down_link').css( 'display', 'block' );
-        
+        $('.recruit_vertical').css( 'opacity', '1' );
+        setTimeout( ()=>{    $('#menu_recruit_sp').css( 'height', '0' );} ,10);
+        setTimeout( ()=>{    $('#menu_recruit_sp').css( 'opacity', '0' );} ,10);
+        setTimeout( ()=>{    $('#menu_recruit_sp').css( 'display', 'none' );} ,500);
     } else {
         // 非表示の場合の処理
-        $('#menu_link_sp').css( 'display', 'block' );
-        $('#up_link').css( 'display', 'block' );
-        $('#down_link').css( 'display', 'none' );
+        $('#menu_recruit_sp').css( 'display', 'block' );
+        $('.recruit_vertical').css( 'opacity', '0' );
+        setTimeout( ()=>{    $('#menu_recruit_sp').css( 'opacity', '1' );} ,10);
+        setTimeout( ()=>{    $('#menu_recruit_sp').css( 'height', '150px' );} ,10);
     }
 }
 

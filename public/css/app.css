@@ -78,7 +78,6 @@ header {
     margin-left: 0px;
 }
 .header_logo_sp {
-    margin: auto;
 }
 .header_menu {
     width: 25vw;
@@ -1180,19 +1179,35 @@ footer {
     header {
         background-position: center;
         background-size: cover;
-        height: 50px;
-        padding: 10px;
+        height: 60px;
+        padding: 14px 20px;
     }
     .header_menu {
         display: inline;
     }
     .header_margin {
-        /* margin-top: 50px; */
+        height: 60px;
     }
+    .logo_header {
+        height: 32px;
+        display: block;
+    }
+    .header_icon_list {
+        display: flex;
+        justify-content: space-between;
+        width: 45vw;
+        margin-left: 18vw;
+        padding-top: 20px;
+    }
+    .header_icon {
+        width: 10vw;
+        display: block;
+    }
+
     .top_bg1 {
         background-image: url(../img/top_bg1_sp.png);
         width: 100%;
-        height: 680px;
+        height: 135vw;
         background-position: center;
         background-size: cover;
         text-align: center;
@@ -1201,18 +1216,136 @@ footer {
         color: #FFFFFF;
         text-shadow: 1px 1px 2px #000000;
         padding-top: 50px;
-        min-height: 680px;
     }
+    .top_title_en {
+        margin-top: 60px;
+        text-align: center;
+        font: normal normal bold 50px/58px Arial;
+        color: #F0F0F0;
+    }
+    .top_title_ja {
+        text-align: center;
+        font: normal normal bold 23px/47px Kozuka Gothic Pr6N;
+        color: #FF6F00;
+        margin-top: 0;
+        margin-bottom: 50px;
+    }
+
+    .service1_hover_div, .service2_hover_div, .service3_hover_div, .service4_hover_div, .company1_hover_div, .company2_hover_div, .company3_hover_div, .recruit1_hover_div, .recruit2_hover_div, .recruit3_hover_div {
+        width: 300px;
+        height: 170px;
+        display: block;
+        position: absolute;
+        overflow: hidden;
+        background-position: center;
+        background-size: cover;
+        transition: 0.5s;
+        z-index: 1000;
+        margin: auto;
+        left: calc((100vw - 300px) / 2);
+    }
+    
+    .service1_orange_1, .service2_orange_1, .service3_orange_1, .service4_orange_1, .company1_orange_1, .company2_orange_1, .company3_orange_1, .recruit1_orange_1, .recruit2_orange_1, .recruit3_orange_1 {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        border-top: 2px solid #FF6F00;
+        border-right: 2px solid #FF6F00;
+        transition: 0.5s;
+        z-index: 900;
+        left: calc(100vw - (100vw - 240px) / 2);
+    }
+
+    .service1_orange_2, .service2_orange_2, .service3_orange_2, .service4_orange_2, .company1_orange_2, .company2_orange_2, .company3_orange_2, .recruit1_orange_2, .recruit2_orange_2, .recruit3_orange_2 {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        border-left: 2px solid #FF6F00;
+        border-bottom: 2px solid #FF6F00;
+        transition: 0.5s;
+        z-index: 900;
+        left: calc((100vw - 340px) / 2);
+    }
+
+    .service1_hover_div {
+        top: calc(135vw + 300px);
+    }
+    .service1_orange_1 {
+        top: calc(135vw + 280px);
+    }
+    .service1_orange_2 {
+        top: calc(135vw + 440px);
+    }
+    .service1_hover_div:hover ~ .service_orange1 {
+        width: 340px;
+        height: 210px;
+        top: calc(135vw + 280px);
+        left: calc((100vw - 340px) / 2);
+    }
+
+    .service2_hover_div {
+        top: calc(135vw + 600px);
+    }
+    .service2_orange_1 {
+        top: calc(135vw + 580px);
+    }
+    .service2_orange_2 {
+        top: calc(135vw + 740px);
+    }
+    .service2_hover_div:hover ~ .service_orange2 {
+        width: 340px;
+        height: 210px;
+        top: calc(135vw + 580px);
+        left: calc((100vw - 340px) / 2);
+    }
+
+    .service3_hover_div {
+        top: calc(135vw + 900px);
+    }
+    .service3_orange_1 {
+        top: calc(135vw + 880px);
+    }
+    .service3_orange_2 {
+        top: calc(135vw + 1040px);
+    }
+    .service3_hover_div:hover ~ .service_orange3 {
+        width: 340px;
+        height: 210px;
+        top: calc(135vw + 880px);
+        left: calc((100vw - 340px) / 2);
+    }
+
+    .service4_hover_div {
+        top: calc(135vw + 1200px);
+    }
+    .service4_orange_1 {
+        top: calc(135vw + 1180px);
+    }
+    .service4_orange_2 {
+        top: calc(135vw + 1340px);
+    }
+    .service4_hover_div:hover ~ .service_orange4 {
+        width: 340px;
+        height: 210px;
+        top: calc(135vw + 1180px);
+        left: calc((100vw - 340px) / 2);
+    }
+
+    .top_service_title {
+        text-align: center;
+        font: normal normal normal 20px/30px Kozuka Gothic Pr6N;
+        color: #FF6F00;
+        padding-top: 230px;
+        margin-bottom: 40px;
+        width: 100vw;
+    }
+    
     footer {
-        background: #F1EBDC;
-        letter-spacing: 0px;
-        color: #000;
-        padding-top: 50px;
-        padding-bottom: 20px;
-        background-image: url(../img/footer_bg_sp.png);
+        display: block;
+        color: #FF6F00;
+        padding: 50px 20px;
         width: 100%;
         height: 600px;
-        background-size: auto;
     }
     .footer_title {
         font: normal normal normal 20px/35px Ten Mincho;
@@ -1228,19 +1361,235 @@ footer {
         margin: 0 auto 10px;
         width: 250px;
     }
+    .footer_item1 {
+        display: flex;
+        justify-content: space-between;
+        font: normal normal normal 0.8vw/1.4vw Kozuka Gothic Pr6N;
+        color: #FF6F00;
+        width: 100%;
+        margin-bottom: 50px;
+    }
     .footer_text1 {
-        font: normal normal normal 14px/20px Ten Mincho;
+        font: normal normal normal 16px/25px Kozuka Gothic Pr6N;
         letter-spacing: 0px;
-        color: #000;
+        color: #FF6F00;
         margin: 0 auto 20px;
-        width: 250px;
+        width: 210px;
     }
     .footer_logo {
-        width: 180px;
-        margin: 50px auto 20px;
+        width: 100px;
+        height: 100px;
+        margin: 0;
         display: block;
     }
+
+    .sp1_hover_div,
+    .sp2_hover_div,
+    .sp3_hover_div {
+        display: flex;
+        justify-content: space-between;
+        padding:10px 20px 10px 0;
+        background: #fff;
+        font: normal normal normal 16px/30px Kozuka Gothic Pr6N;
+        color: #FF6F00;
+        border-bottom: 1px solid #F0F0F0;
+    }
+    
+    .orange_yazi {
+        width: 20px;
+        height: 8px;
+        display: block;
+        position: relative;
+        top: 10px;
+        transition: 0.5s;
+        left: 0;
+    }
+    
+    .sp1_hover_div:hover div,
+    .sp2_hover_div:hover div,
+    .sp3_hover_div:hover div {
+        color: #FF6F00;
+        text-decoration: underline #FF6F00;
+    }
+    
+    .sp1_hover_div:hover .orange_yazi,
+    .sp2_hover_div:hover .orange_yazi,
+    .sp3_hover_div:hover .orange_yazi {
+        left: 20px;
+    }
+    
+    
+
+
+
+    .copyright {
+        display: flex;
+        justify-content: space-between;
+        background: #FF6F00 0% 0% no-repeat padding-box;
+        font: normal normal normal 12px/25px Kozuka Gothic Pr6N;
+        color: #FFFFFF;
+        padding: 10px 60px 50px;
+        width: 100%;
+    }
+    .copyright_a {
+        color: #FFFFFF;
+        width: 140px;
+        border-right: 1px solid #fff;
+    }
 }
+
+/*以下ハンバーガーメニューについて*/
+
+.menu-btn {
+    position: absolute;
+    top: 0;
+    right: 2%;
+    display: flex;
+    position: fixed;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    z-index: 6000;
+    background: none;
+    border: none;
+    width: 60px;
+    background: #FF6F00;
+}
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+    content: '';
+    display: block;
+    height: 2px;
+    border-radius: 3px;
+    background-color: #fff;
+    position: absolute;
+}
+.menu-btn span {
+    width: 30px;
+}
+.menu-btn span:before {
+    bottom: 8px;
+    width: 30px;
+}
+.menu-btn span:after {
+    top: 8px;
+    width: 30px;
+}
+
+#menu-btn-check:checked ~ .menu-btn span {
+    background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん中の線を透明にする*/
+}
+#menu-btn-check:checked ~ .menu-btn span::before {
+    width: 30px;
+    bottom: 0;
+    transform: rotate(45deg);
+}
+#menu-btn-check:checked ~ .menu-btn span::after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+#menu-btn-check {
+    display: none;
+}
+
+
+.menu-content, .menu-content_work{
+    top: 0px;
+    width: 100%;
+    position: fixed;
+    height: 1000px;
+    left: 100%;/*leftの値を変更してメニューを画面外へ*/
+    z-index: 80;
+    background-color: #FF6F00;
+    transition: all 0.5s;/*アニメーション設定*/
+    padding-top: 60px;
+}
+
+.menu-content ul, .menu-content_work ul {
+    padding: 25px 20px 0 30px;
+    height: 400px;
+    width: 80%;
+}
+.menu-content ul li, .menu-content_work ul li {
+    list-style: none;
+    border-bottom: 1px solid #fff;
+    padding: 12px 0;
+    display: flex;
+    justify-content: space-between;
+    transition: 0.5s;
+}
+
+.menu-content_work ul li:first-child {
+    border-top: 1px solid #fff;
+}
+
+.menu_head_sp, .menu_content_sp {
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    box-sizing: border-box;
+    color:#fff;
+    text-decoration: none;
+    position: relative;
+    font: normal normal 600 16px/20px sans-serif;
+}
+.menu_content {
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    box-sizing: border-box;
+    color:#fff;
+    text-decoration: none;
+    position: relative;
+    font: normal normal normal 17px/30px Kozuka Gothic Pr6N;
+}
+
+#menu-btn-check:checked ~ .menu-content {
+    left: 0px;/*メニューを画面内へ*/
+}
+#menu-btn-check:checked ~ .menu-content_work {
+    left: 20%;/*メニューを画面内へ*/
+}
+
+#menu_service_sp, #menu_company_sp, #menu_recruit_sp {
+    display: none;
+    height: 0px;
+    padding:0;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.beside, .vertical {
+    content: '';
+    display: block;
+    height: 2px;
+    border-radius: 3px;
+    background-color: #fff;
+    position: relative;
+    transition: 0.2s;
+}
+.beside {
+    width: 30px;
+    top: 15px;
+}
+.vertical {
+    width: 30px;
+    top: 13px;
+    transform: rotate(90deg);
+}
+
+.menu_a_sp {
+    font: normal normal normal 14px/30px Kozuka Gothic Pr6N;
+    color: #FFFFFF;
+    display: block;
+    border-bottom: 1px solid #fff;
+    padding: 10px;
+}
+
+
+
 
 .g-recaptcha {
     width: 300px;
