@@ -143,37 +143,91 @@
 <div class="top_title_en">SERVICES</div>
 <div class="top_title_ja">事業情報</div>
 
-<a href="{{ route('service1') }}" class="service1_hover_div">
-    <img src="{{ asset('img/service_icon1.png') }}" class="service_icon1">
+<a href="{{ route('service1') }}">
+    <img src="{{ asset('img/service_icon1_sp.png') }}" class="top_icon">
 </a>
-<div class="service1_orange_1 service_orange1"></div>
-<div class="service1_orange_2 service_orange1"></div>
 <div class="top_service_title">寺院運営コンサルティング</div>
 
-<a href="{{ route('service2') }}" class="service2_hover_div">
-    <img src="{{ asset('img/service_icon2.png') }}" class="service_icon2">
+<a href="{{ route('service2') }}">
+    <img src="{{ asset('img/service_icon2_sp.png') }}" class="top_icon">
 </a>
-<div class="service2_orange_1 service_orange2"></div>
-<div class="service2_orange_2 service_orange2"></div>
 <div class="top_service_title">納骨堂コンサルティング</div>
 
-<a href="{{ route('service3') }}" class="service3_hover_div">
-    <img src="{{ asset('img/service_icon3.png') }}" class="service_icon3">
+<a href="{{ route('service3') }}">
+    <img src="{{ asset('img/service_icon3_sp.png') }}" class="top_icon">
 </a>
-<div class="service3_orange_1 service_orange3"></div>
-<div class="service3_orange_2 service_orange3"></div>
 <div class="top_service_title">集客・広報コンサルティング</div>
 
-<a href="{{ route('service4') }}" class="service4_hover_div">
-    <img src="{{ asset('img/service_icon4.png') }}" class="service_icon4">
+<a href="{{ route('service4') }}">
+    <img src="{{ asset('img/service_icon4_sp.png') }}" class="top_icon">
 </a>
-<div class="service4_orange_1 service_orange4"></div>
-<div class="service4_orange_2 service_orange4"></div>
 <div class="top_service_title">新規事業コンサルティング</div>
 
+<div class="separate_line"></div>
+
+
+<div class="top_title_en">COMPANY</div>
+<div class="top_title_ja">企業情報</div>
+
+<a href="{{ route('company1') }}">
+    <img src="{{ asset('img/company_icon1_sp.png') }}" class="top_icon">
+</a>
+<div class="top_service_title">会社概要</div>
+
+<a href="{{ route('company2') }}">
+    <img src="{{ asset('img/company_icon2_sp.png') }}" class="top_icon">
+</a>
+<div class="top_service_title">代表挨拶</div>
+
+<a href="{{ route('company3') }}">
+    <img src="{{ asset('img/company_icon3_sp.png') }}" class="top_icon">
+</a>
+<div class="top_service_title">企業理念</div>
+
+<div class="separate_line"></div>
+
+
+<div class="top_title_en">RECRUIT</div>
+<div class="top_title_ja">採用情報</div>
+
+<a href="{{ route('recruit1') }}">
+    <img src="{{ asset('img/recruit_icon1_sp.png') }}" class="top_icon">
+</a>
+<div class="top_service_title">会社について</div>
+
+<a href="{{ route('recruit2') }}">
+    <img src="{{ asset('img/recruit_icon2_sp.png') }}" class="top_icon">
+</a>
+<div class="top_service_title">人について</div>
+
+<a href="{{ route('recruit3') }}">
+    <img src="{{ asset('img/recruit_icon3_sp.png') }}" class="top_icon">
+</a>
+<div class="top_service_title">仕事について</div>
+
+<div class="separate_line"></div>
+
+
+<div class="top_title_en">NEWS</div>
+<div class="top_title_ja">お知らせ</div>
+
+<img src="{{ asset('img/news_sample_sp1.png') }}" class="top_icon">
+<div class="top_news_title">ホームページをリニューアルしました</div>
+<div class="top_news_date">2023.11.21</div>
+
+<img src="{{ asset('img/news_sample_sp2.png') }}" class="top_icon">
+<div class="top_news_title">ホームページをリニューアルしました</div>
+<div class="top_news_date">2023.11.21</div>
+
+<img src="{{ asset('img/news_sample_sp3.png') }}" class="top_icon">
+<div class="top_news_title">ホームページをリニューアルしました</div>
+<div class="top_news_date">2023.11.21</div>
+
+<a href="{{ route('news') }}" class=""><img src="{{ asset('img/news_more_btn.png') }}" class="news_more_btn"></a>
 
 
 
+@include('item.contact_item_sp')
 
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>

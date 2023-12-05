@@ -41,9 +41,33 @@
 
 @section('content_sp')
 
-<div class="top_bg1">
+<div class="service_item_div">
+    <div class="underline_title" style="width: 220px; font-size: 26px; margin-bottom: 50px;">その他のお問合せ</div>
 
+    <form id="contact_form" name="contact_form" action="" method="post">
+        <div class="contact_name">お名前 <span class="require_mark">※</span></div>
+        <input type="text" class="contact_text" placeholder="例：田中太郎">
+
+        <div class="contact_name">会社名／組織名 <span class="require_mark">※</span></div>
+        <input type="text" class="contact_text" placeholder="例：株式会社明光">
+
+        <div class="contact_name">メールアドレス <span class="require_mark">※</span></div>
+        <input type="text" class="contact_text" placeholder="例：xxx@meiko.co.jp">
+
+        <div class="contact_name">電話番号 <span class="require_mark">※</span></div>
+        <input type="text" class="contact_text" placeholder="">
+
+        <div class="contact_name">URL</div>
+        <input type="text" class="contact_text" placeholder="">
+
+        <div class="contact_name">お問い合わせ内容 <span class="require_mark">※</span></div>
+        <textarea class="contact_textarea"></textarea>
+
+        <a href="#!" class="send_btn">送信</a>
+    </form>
 </div>
+
+
 
 
 

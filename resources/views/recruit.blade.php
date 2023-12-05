@@ -42,9 +42,22 @@
 
 @section('content_sp')
 
-<div class="top_bg1">
+<img src="{{ asset('img/recruit_list_bar_sp.png') }}" class="service_bar mb100">
 
-</div>
+<a href="{{ route('recruit1') }}">
+    <img src="{{ asset('img/recruit_icon1_sp.png') }}" class="top_icon">
+</a>
+<div class="top_service_title">会社について</div>
+
+<a href="{{ route('recruit2') }}">
+    <img src="{{ asset('img/recruit_icon2_sp.png') }}" class="top_icon">
+</a>
+<div class="top_service_title">人について</div>
+
+<a href="{{ route('recruit3') }}">
+    <img src="{{ asset('img/recruit_icon3_sp.png') }}" class="top_icon">
+</a>
+<div class="top_service_title">仕事について</div>
 
 
 

@@ -2,7 +2,7 @@
 
 
 @section('content')
-<img src="{{ asset('img/recruit3_bar.png') }}" class="service_bar">
+<img src="{{ asset('img/news_bar.png') }}" class="service_bar">
 
 
 <div class="service_list_div">
@@ -90,11 +90,46 @@
 
 @section('content_sp')
 
-<div class="top_bg1">
+<img src="{{ asset('img/news_bar_sp.png') }}" class="service_bar mb100">
 
-</div>
+<a href="{{ route('news_detail') }}" class="news_main_div">
+    <img src="{{ asset('img/news_sample_sp1.png') }}" class="top_icon">
+    <div class="top_news_title">ホームページをリニューアルしました</div>
+    <div class="top_news_date">2023.11.21</div>
+</a>
+
+<a href="{{ route('news_detail') }}" class="news_main_div">
+    <img src="{{ asset('img/news_sample_sp2.png') }}" class="top_icon">
+    <div class="top_news_title">ホームページをリニューアルしました</div>
+    <div class="top_news_date">2023.11.21</div>
+</a>
+
+<a href="{{ route('news_detail') }}" class="news_main_div">
+    <img src="{{ asset('img/news_sample_sp3.png') }}" class="top_icon">
+    <div class="top_news_title">ホームページをリニューアルしました</div>
+    <div class="top_news_date">2023.11.21</div>
+</a>
 
 
+<a href="{{ route('news_detail') }}" class="news_main_div">
+    <img src="{{ asset('img/news_sample_sp1.png') }}" class="top_icon">
+    <div class="top_news_title">ホームページをリニューアルしました</div>
+    <div class="top_news_date">2023.11.21</div>
+</a>
+
+<a href="{{ route('news_detail') }}" class="news_main_div">
+    <img src="{{ asset('img/news_sample_sp2.png') }}" class="top_icon">
+    <div class="top_news_title">ホームページをリニューアルしました</div>
+    <div class="top_news_date">2023.11.21</div>
+</a>
+
+<a href="{{ route('news_detail') }}" class="news_main_div">
+    <img src="{{ asset('img/news_sample_sp3.png') }}" class="top_icon">
+    <div class="top_news_title">ホームページをリニューアルしました</div>
+    <div class="top_news_date">2023.11.21</div>
+</a>
+
+@include('item.contact_item_sp')
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script src="{{ asset('js/index.js') }}"></script>

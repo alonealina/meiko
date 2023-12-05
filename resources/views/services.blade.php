@@ -49,10 +49,29 @@
 
 @section('content_sp')
 
-<div class="top_bg1">
+<img src="{{ asset('img/service_list_bar_sp.png') }}" class="service_bar mb100">
 
-</div>
+<a href="{{ route('service1') }}">
+    <img src="{{ asset('img/service_icon1_sp.png') }}" class="top_icon">
+</a>
+<div class="top_service_title">寺院運営コンサルティング</div>
 
+<a href="{{ route('service2') }}">
+    <img src="{{ asset('img/service_icon2_sp.png') }}" class="top_icon">
+</a>
+<div class="top_service_title">納骨堂コンサルティング</div>
+
+<a href="{{ route('service3') }}">
+    <img src="{{ asset('img/service_icon3_sp.png') }}" class="top_icon">
+</a>
+<div class="top_service_title">集客・広報コンサルティング</div>
+
+<a href="{{ route('service4') }}">
+    <img src="{{ asset('img/service_icon4_sp.png') }}" class="top_icon">
+</a>
+<div class="top_service_title">新規事業コンサルティング</div>
+
+@include('item.contact_item_sp')
 
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>

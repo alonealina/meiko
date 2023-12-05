@@ -855,13 +855,6 @@ footer {
     display: block;
 }
 
-.company_flex {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
 .company_column {
     width: 50%;
     display: flex;
@@ -949,6 +942,7 @@ footer {
     justify-content: space-between;
     width: 100%;
     margin: 2vw 0;
+    flex-wrap: wrap;
 }
 .company_flex_box {
     width: 48%;
@@ -1176,6 +1170,9 @@ footer {
 }
 
 @media screen and (max-width: 500px) {
+    .body {
+        overflow-x: hidden;
+    }
     header {
         background-position: center;
         background-size: cover;
@@ -1231,121 +1228,51 @@ footer {
         margin-bottom: 50px;
     }
 
-    .service1_hover_div, .service2_hover_div, .service3_hover_div, .service4_hover_div, .company1_hover_div, .company2_hover_div, .company3_hover_div, .recruit1_hover_div, .recruit2_hover_div, .recruit3_hover_div {
-        width: 300px;
-        height: 170px;
-        display: block;
-        position: absolute;
-        overflow: hidden;
-        background-position: center;
-        background-size: cover;
-        transition: 0.5s;
-        z-index: 1000;
+    .top_icon {
+        width: 340px;
         margin: auto;
-        left: calc((100vw - 300px) / 2);
+        display: block;
     }
-    
-    .service1_orange_1, .service2_orange_1, .service3_orange_1, .service4_orange_1, .company1_orange_1, .company2_orange_1, .company3_orange_1, .recruit1_orange_1, .recruit2_orange_1, .recruit3_orange_1 {
-        width: 50px;
-        height: 50px;
-        position: absolute;
-        border-top: 2px solid #FF6F00;
-        border-right: 2px solid #FF6F00;
-        transition: 0.5s;
-        z-index: 900;
-        left: calc(100vw - (100vw - 240px) / 2);
-    }
-
-    .service1_orange_2, .service2_orange_2, .service3_orange_2, .service4_orange_2, .company1_orange_2, .company2_orange_2, .company3_orange_2, .recruit1_orange_2, .recruit2_orange_2, .recruit3_orange_2 {
-        width: 50px;
-        height: 50px;
-        position: absolute;
-        border-left: 2px solid #FF6F00;
-        border-bottom: 2px solid #FF6F00;
-        transition: 0.5s;
-        z-index: 900;
-        left: calc((100vw - 340px) / 2);
-    }
-
-    .service1_hover_div {
-        top: calc(135vw + 300px);
-    }
-    .service1_orange_1 {
-        top: calc(135vw + 280px);
-    }
-    .service1_orange_2 {
-        top: calc(135vw + 440px);
-    }
-    .service1_hover_div:hover ~ .service_orange1 {
-        width: 340px;
-        height: 210px;
-        top: calc(135vw + 280px);
-        left: calc((100vw - 340px) / 2);
-    }
-
-    .service2_hover_div {
-        top: calc(135vw + 600px);
-    }
-    .service2_orange_1 {
-        top: calc(135vw + 580px);
-    }
-    .service2_orange_2 {
-        top: calc(135vw + 740px);
-    }
-    .service2_hover_div:hover ~ .service_orange2 {
-        width: 340px;
-        height: 210px;
-        top: calc(135vw + 580px);
-        left: calc((100vw - 340px) / 2);
-    }
-
-    .service3_hover_div {
-        top: calc(135vw + 900px);
-    }
-    .service3_orange_1 {
-        top: calc(135vw + 880px);
-    }
-    .service3_orange_2 {
-        top: calc(135vw + 1040px);
-    }
-    .service3_hover_div:hover ~ .service_orange3 {
-        width: 340px;
-        height: 210px;
-        top: calc(135vw + 880px);
-        left: calc((100vw - 340px) / 2);
-    }
-
-    .service4_hover_div {
-        top: calc(135vw + 1200px);
-    }
-    .service4_orange_1 {
-        top: calc(135vw + 1180px);
-    }
-    .service4_orange_2 {
-        top: calc(135vw + 1340px);
-    }
-    .service4_hover_div:hover ~ .service_orange4 {
-        width: 340px;
-        height: 210px;
-        top: calc(135vw + 1180px);
-        left: calc((100vw - 340px) / 2);
-    }
-
     .top_service_title {
         text-align: center;
-        font: normal normal normal 20px/30px Kozuka Gothic Pr6N;
+        font: normal normal bold 20px/30px Kozuka Gothic Pr6N;
         color: #FF6F00;
-        padding-top: 230px;
+        padding-top: 20px;
         margin-bottom: 40px;
         width: 100vw;
     }
     
+    .separate_line {
+        background: #F0F0F0;
+        height: 2px;
+        width: 100%;
+        margin: 50px 0;
+    }
+
+    .top_news_title {
+        font: normal normal normal 16px/32px Kozuka Gothic Pr6N;
+        color: #FF6F00;
+        margin: 20px auto;
+        width: 340px;
+    }
+    .top_news_date {
+        font: normal normal 900 12px/17px Arial;
+        color: #3E3E3E;
+        margin: 20px auto 40px;
+        width: 340px;
+    }
+    .news_more_btn {
+        width: 200px;
+        margin: 50px auto;
+        display: block;
+    }
+
+
     footer {
         display: block;
         color: #FF6F00;
         padding: 50px 20px;
         width: 100%;
-        height: 600px;
     }
     .footer_title {
         font: normal normal normal 20px/35px Ten Mincho;
@@ -1421,6 +1348,30 @@ footer {
     
 
 
+    .top_contact_bg_sp {
+        background-image: url(../img/top_contact_bg_sp.png);
+        width: 100%;
+        height: 124vw;
+        background-position: center;
+        background-size: cover;
+        padding-top: 120px;
+        text-align: center;
+    }
+    .top_title_contact {
+        font: normal normal bold 50px/58px Arial;
+        color: #F0F0F0;
+        margin-bottom: 10px;
+    }
+    .top_contact_text {
+        font: normal normal normal 16px/30px Kozuka Gothic Pr6N;
+        color: #FFFFFF;
+        margin-bottom: 50px;
+    }
+    .top_contact_btn {
+        width: 200px;
+        margin: 0 auto;
+        display: block;
+    }
 
     .copyright {
         display: flex;
@@ -1436,6 +1387,348 @@ footer {
         width: 140px;
         border-right: 1px solid #fff;
     }
+
+    .service_item_div {
+        width: 100%;
+        background: #fff;
+        padding: 50px 20px 100px;
+    }
+    .service_main_img {
+        width: 100%;
+    }
+    .service1_text_box {
+        left: 0;
+        top: 0;
+    }
+    .service_title_orange_en {
+        font: normal normal bold 40px/45px Arial;
+        color: #FF6F00;
+        margin-top: 10px;
+    }
+    .service_title_orange_ja {
+        font: normal normal normal 16px/32px Kozuka Gothic Pr6N;
+        color: #FF6F00;
+    }
+    .service_text {
+        font: normal normal normal 16px/32px Kozuka Gothic Pr6N;
+        color: #535353;
+        margin-top: 10px;
+        mix-blend-mode: normal;
+    }
+    .service_center_title {
+        margin-top: 70px;
+    }
+    .service_flex_item {
+        display: block;
+        width: 100%;
+    }
+    .service_flex_num {
+        margin-top: 50px;
+        padding: 0 10px;
+        font: normal normal bold 25px/29px Arial;
+    }
+    .service_flex_en {
+        margin-top: 10px;
+        padding: 0 10px;
+        font: normal normal bold 40px/45px Arial;
+    }
+    .service_flex_ja {
+        margin-top: 10px;
+        padding: 0 10px;
+        font: normal normal bold 18px/36px Kozuka Gothic Pr6N;
+    }
+    .service_flex_text {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 0 10px;
+        font: normal normal normal 14px/29px Kozuka Gothic Pr6N;
+    }
+    .service_client_title {
+        text-align: center;
+        margin-top: 80px;
+    }
+    .service_client_text {
+        font: normal normal normal 14px/29px Kozuka Gothic Pr6N;
+        color: #535353;
+        margin-top: 20px;
+    }
+    .henson_logo {
+        width: 125px;
+        margin-top: 50px;
+    }
+
+    .company_column {
+        width: 100%;
+        display: flex;
+        margin: 10px 0;
+    }
+    .company_column_name {
+        width: 120px;
+        font: normal normal bold 17px/26px Kozuka Gothic Pr6N;
+    }
+    .company_column_content {
+        font: normal normal normal 17px/26px Kozuka Gothic Pr6N;
+        width: calc(100% - 120px);
+    }
+
+    .company2_title {
+        text-align: left;
+        font: normal normal bold 30px/45px Kozuka Gothic Pr6N;
+        color: #FF6F00;
+        text-decoration: underline;
+        width: 100%;
+        margin-left: 0;
+        border-bottom: 0;
+        margin-bottom: 50px;
+    }
+    .company2_flex_text {
+        width: 100%;
+        font: normal normal normal 16px/32px Kozuka Gothic Pr6N;
+        margin-bottom: 50px;
+    }
+    .company2_flex_content {
+        width: 100%;
+    }
+    .company2_flex_text2 {
+        padding: 30px;
+        font: normal normal normal 14px/29px Kozuka Gothic Pr6N;
+    }
+    .company2_ceo {
+        font: normal normal bold 14px/28px Kozuka Gothic Pr6N;
+    }
+    .company_ceo_name {
+        font: normal normal bold 25px/50px Kozuka Gothic Pr6N;
+        margin-bottom: 20px;
+    }
+    .company_ceo_name span {
+        font: normal normal normal 14px/28px Kozuka Gothic Pr6N;
+    }
+    .underline_title {
+        font: normal normal bold 30px/45px Kozuka Gothic Pr6N;
+        border-bottom: 3px solid;
+        display: block;
+        margin: 0 auto;
+    }
+    .company3_1 {
+        margin: 30px auto 50px;
+    }
+    .company3_title2 {
+        font: normal normal bold 20px/40px Kozuka Gothic Pr6N;
+        margin: 30px 0 20px;
+    }
+    .company_flex_box {
+        width: 48%;
+        border: 0;
+        display: block;
+        justify-content: space-between;
+    }
+    .company3_2 {
+        width: 100%;
+    }
+    .company_flex_text {
+        padding: 10px 0;
+        font: normal normal normal 13px/25px Kozuka Gothic Pr6N;
+        color: #535353;
+        width: 100%;
+    }
+    .company3_3_box {
+        width: 100%;
+        font: normal normal normal 14px/25px Kozuka Gothic Pr6N;
+        color: #535353;
+        display: flex;
+        margin-bottom: 30px;
+    }
+    .company3_3 {
+        width: 120px;
+        height: 120px;
+        display: block;
+        margin-right: 10px;
+    }
+    .company3_3_title {
+        text-align: left;
+        font: normal normal bold 16px/32px Kozuka Gothic Pr6N;
+        color: #FF6F00;
+        margin: 0;
+    }
+
+    .mb100 {
+        margin-bottom: 100px;
+    }
+
+    .recruit1_box {
+        width: 47%;
+    }
+    .recruit_box_orange {
+        height: 30vw;
+    }
+    .recruit_box_text {
+        padding: 10px;
+        font: normal normal normal 14px/25px Kozuka Gothic Pr6N;
+        margin-bottom: 20px;
+    }
+    .recruit_box_title {
+        font: normal normal bold 20px/40px Kozuka Gothic Pr6N;
+    }
+    .office_dummy {
+        margin-top: 50px;
+    }
+
+    .recruit2_graph_div {
+        width: 100%;
+        overflow-x: scroll;
+        margin-bottom: 80px;
+    }
+    .recruit2_graph {
+        width: 500vw;
+        display: block;
+        margin: 0 15%;
+    }
+
+    .recruit3_title {
+        font: normal normal bold 20px/40px Kozuka Gothic Pr6N;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    .recruit3_text {
+        font: normal normal normal 14px/29px Kozuka Gothic Pr6N;
+        color: #535353;
+    }
+
+    .recruit3_1_hover_div, .recruit3_2_hover_div, .recruit3_3_hover_div, .contact1_hover_div, .contact2_hover_div, .contact3_hover_div, .contact4_hover_div {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 20px;
+        background: #F0F0F0 0% 0% no-repeat padding-box;
+        font: normal normal normal 16px/32px Kozuka Gothic Pr6N;
+        color: #FF6F00;
+        margin: 10px 0;
+    }
+
+    .recruit_big_title {
+        font: normal normal bold 30px/45px Kozuka Gothic Pr6N;
+        margin-bottom: 30px;
+    }
+
+    .recruit_flex {
+        display: block;
+        width: 100%;
+        margin: 10px 0 30px;
+        font: normal normal normal 16px/24px Kozuka Gothic Pr6N;
+        padding-left: 10px;
+    }
+    .recruit_flex_title {
+        font: normal normal bold 16px/24px Kozuka Gothic Pr6N;
+        width: 100%;
+        margin-left: -10px;
+        margin-bottom: 10px;
+
+    }
+
+    .news_detail_date {
+        font: normal normal 900 12px/17px Arial;
+        color: #FFFFFF;
+        background: #FF6F00 0% 0% no-repeat padding-box;
+        width: 120px;
+        text-align: center;
+        padding: 10px 20px;
+    }
+    .news_detail_title {
+        font: normal normal bold 18px/36px Kozuka Gothic Pr6N;
+        letter-spacing: 0px;
+        color: #FF6F00;
+        margin: 20px 0 10px;
+    }
+    .news_detail_img {
+        width: 100%;
+    }
+    .news_detail_text {
+        width: 100%;
+        font: normal normal normal 16px/28px Kozuka Gothic Pr6N;
+        color: #535353;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+    .back_btn {
+        width: 100px;
+        display: block;
+    }
+
+    .news_detail_list_sp {
+        background: #F0F0F0 0% 0% no-repeat padding-box;
+        padding: 50px 0;
+    }
+
+    .contact_detail {
+        background: #F0F0F0 0% 0% no-repeat padding-box;
+        width: 100%;
+        text-align: center;
+        font: normal normal bold 15px/25px Kozuka Gothic Pr6N;
+        color: #000000;
+        padding: 20px 0;
+        margin-bottom: 50px;
+    }
+    .contact_detail span {
+        font: normal normal bold 25px/25px Kozuka Gothic Pr6N;
+    }
+    .contact_name {
+        font: normal normal normal 14px/32px Kozuka Gothic Pr6N;
+        color: #000000;
+    }
+    .require_mark {
+        font: normal normal normal 8px/12px Kozuka Gothic Pr6N;
+    }
+    .contact_text, .contact_textarea {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        background: #FFFCF9 0% 0% no-repeat padding-box;
+        border: 1px solid #FFD3B1;
+        border-radius: 5px;
+        padding: 12px 20px;
+        font: normal normal normal 14px/29px Kozuka Gothic Pr6N;
+        width: 100%;
+    }
+    .contact_textarea {
+        height: 150px;
+    }
+    .contact_flex {
+        font: normal normal normal 14px/32px Kozuka Gothic Pr6N;
+    }
+
+    .radio_btn, .checkbox {
+        margin-right: 10px;
+    }
+    .send_btn {
+        background: #FF6F00 0% 0% no-repeat padding-box;
+        display: block;
+        margin: auto;
+        width: 240px;
+        text-align: center;
+        font: normal normal bold 20px/40px Kozuka Gothic Pr6N;
+        color: #FFFFFF;
+        padding: 10px 0;
+        margin-top: 5vw;
+    }
+
+    .contact_flex_item2 {
+        width: 100%;
+        margin: 1vw 0;
+        font: normal normal normal 14px/32px Kozuka Gothic Pr6N;
+    }
+    .contact_column {
+        font: normal normal normal 10px/16px Kozuka Gothic Pr6N;
+    }
+
+    .policy_text {
+        font: normal normal normal 14px/29px Kozuka Gothic Pr6N;
+        color: #000000;
+    }
+    .policy_title {
+        font: normal normal bold 22px/34px Kozuka Gothic Pr6N;
+        color: #000000;
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+
 }
 
 /*以下ハンバーガーメニューについて*/
@@ -1535,7 +1828,7 @@ footer {
     position: relative;
     font: normal normal 600 16px/20px sans-serif;
 }
-.menu_content {
+.menu_content, .menu_content:hover {
     display: block;
     width: 100%;
     font-size: 15px;

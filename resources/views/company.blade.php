@@ -42,10 +42,24 @@
 
 @section('content_sp')
 
-<div class="top_bg1">
+<img src="{{ asset('img/company_list_bar_sp.png') }}" class="service_bar mb100">
 
-</div>
+<a href="{{ route('company1') }}">
+    <img src="{{ asset('img/company_icon1_sp.png') }}" class="top_icon">
+</a>
+<div class="top_service_title">会社概要</div>
 
+<a href="{{ route('company2') }}">
+    <img src="{{ asset('img/company_icon2_sp.png') }}" class="top_icon">
+</a>
+<div class="top_service_title">代表挨拶</div>
+
+<a href="{{ route('company3') }}">
+    <img src="{{ asset('img/company_icon3_sp.png') }}" class="top_icon">
+</a>
+<div class="top_service_title">企業理念</div>
+
+@include('item.contact_item_sp')
 
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
